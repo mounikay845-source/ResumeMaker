@@ -1,0 +1,143 @@
+.profile-header-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-main-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .profile-main-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.avatar-glow-ring {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #ff6b00, #ffb700, #ff4500, #ff6b00);
+  filter: blur(4px);
+  opacity: 0.8;
+  animation: rotateGlow 8s linear infinite;
+}
+
+@keyframes rotateGlow {
+  100% { transform: rotate(360deg); }
+}
+
+.avatar-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 3px solid #070a13;
+}
+
+.camera-badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  z-index: 3;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b00 0%, #ff3b00 100%);
+  border: 2px solid #070a13;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(255, 107, 0, 0.6);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.camera-badge:hover {
+  transform: scale(1.15);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name-verified-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 520px) {
+  .name-verified-row {
+    justify-content: center;
+  }
+}
+
+.user-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.verified-badge {
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+}
+
+.user-role {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: #7dd3fc;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 520px) {
+  .user-role {
+    justify-content: center;
+  }
+}
+
+.greeting-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.highlight-orange {
+  color: #ff6b00;
+}
+
+.greeting-subtitle {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-top: 4px;
+  max-width: 480px;
+}

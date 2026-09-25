@@ -1,0 +1,77 @@
+.bottom-nav-container {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 960px;
+  z-index: 100;
+}
+
+/* Hide Bottom Nav on Desktop View */
+@media (min-width: 768px) {
+  .bottom-nav-container {
+    display: none !important;
+  }
+}
+
+.bottom-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 12px;
+  background: rgba(10, 14, 26, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 107, 0, 0.15);
+}
+
+.nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 20px;
+  border-radius: 14px;
+  background: transparent;
+  color: #94a3b8;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 80px;
+}
+
+@media (max-width: 480px) {
+  .nav-tab {
+    padding: 6px 10px;
+    min-width: 65px;
+  }
+}
+
+.nav-tab:hover {
+  color: #ffffff;
+}
+
+.nav-tab.active {
+  background: rgba(255, 107, 0, 0.12);
+  border: 1px solid rgba(255, 107, 0, 0.5);
+  color: #ff6b00;
+  box-shadow: inset 0 0 15px rgba(255, 107, 0, 0.2), 0 0 15px rgba(255, 107, 0, 0.25);
+}
+
+.tab-icon {
+  transition: transform 0.2s ease;
+}
+
+.nav-tab.active .tab-icon {
+  transform: translateY(-1px) scale(1.1);
+  color: #ff6b00;
+}
+
+.tab-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
