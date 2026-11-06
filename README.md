@@ -1,16 +1,64 @@
-# React + Vite
+# 📄 ResumeMaker — Modern Interactive Resume & CV Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-resume--maker.vercel.app-brightgreen?style=for-the-badge&logo=vercel)](https://resume-maker-six-kohl.vercel.app)
+[![React](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.2-purple?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Lucide](https://img.shields.io/badge/Icons-Lucide-orange?style=for-the-badge)](https://lucide.dev/)
 
-Currently, two official plugins are available:
+**ResumeMaker** is an intuitive, web-based resume builder application designed to help job seekers generate professional, ATS-friendly resumes in real time. Built with **React 19**, it features dynamic form editing, interactive visual previews, and instant export capabilities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live Application
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 **[https://resume-maker-six-kohl.vercel.app](https://resume-maker-six-kohl.vercel.app)**
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Key Features
+
+- **⚡ Real-Time Live Preview:** Split-screen layout displaying immediate visual feedback as information is entered.
+- **📝 Comprehensive Resume Sections:**
+  - Personal Information & Contact Details (Email, Phone, LinkedIn, GitHub)
+  - Professional Summary / Objective Statement
+  - Work Experience & Key Achievements
+  - Education & Academic Credentials
+  - Technical & Soft Skills Categorization
+  - Projects, Certifications & Extracurriculars
+- **🎨 Modern Professional Styling:** Clean typography and layout optimized for recruitment readability.
+- **📥 One-Click Export:** Download and print ready-to-use resumes.
+- **📱 Fully Responsive:** Works smoothly on desktops, tablets, and smartphones.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** [React 19](https://react.dev/)
+- **Routing:** [React Router DOM](https://reactrouter.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Getting Started Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/mounikay845-source/ResumeMaker.git
+cd ResumeMaker
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 👩‍💻 Author
+
+**Mounika Yadav**
+- GitHub: [@mounikay845-source](https://github.com/mounikay845-source)
+- Email: `mounikay845@gmail.com`
